@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/srcsetWay.css" />
+    <title>srcset</title>
+  </head>
+  <body>
+    <h2>when performance/load time is a issuse we can use srcset</h2>
+    <div class="demo">
+      <div class="grid">
+        <picture class="wrapper">
+          <source
+            media="(min-width: 800px)"
+            srcset="https://via.placeholder.com/400x201"
+          />
+          <source
+            media="(max-width: 799px)"
+            srcset="
+              https://i.pinimg.com/736x/02/d7/01/02d701b77a984a1b6cf970e6eb0468e1--teacup-maltipoo-maltipoo-puppies.jpg
+            "
+          />
+          <img class="img" src="https://via.placeholder.com/870x747" />
+        </picture>
+
+        <picture class="wrapper">
+          <source
+            media="(min-width: 800px)"
+            srcset="https://via.placeholder.com/423x742"
+          />
+          <source
+            media="(max-width: 799px)"
+            srcset="
+              https://i.pinimg.com/736x/02/d7/01/02d701b77a984a1b6cf970e6eb0468e1--teacup-maltipoo-maltipoo-puppies.jpg
+            "
+          />
+          <img class="img" src="https://via.placeholder.com/941x775" />
+        </picture>
+
+        <picture class="wrapper">
+          <source
+            media="(min-width: 800px)"
+            srcset="https://via.placeholder.com/880x588"
+          />
+          <source
+            media="(max-width: 799px)"
+            srcset="
+              https://i.pinimg.com/736x/02/d7/01/02d701b77a984a1b6cf970e6eb0468e1--teacup-maltipoo-maltipoo-puppies.jpg
+            "
+          />
+          <img class="img" src="https://via.placeholder.com/783x521" />
+        </picture>
+
+        <picture class="wrapper">
+          <source
+            media="(min-width: 800px)"
+            srcset="https://via.placeholder.com/635x816"
+          />
+          <source
+            media="(max-width: 799px)"
+            srcset="
+              https://i.pinimg.com/736x/02/d7/01/02d701b77a984a1b6cf970e6eb0468e1--teacup-maltipoo-maltipoo-puppies.jpg
+            "
+          />
+          <img class="img" src="https://via.placeholder.com/950x897" />
+        </picture>
+      </div>
+    </div>
+  </body>
+</html>

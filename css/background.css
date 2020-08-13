@@ -1,0 +1,12 @@
+/* use background-image if your image is not part of the page's content */
+
+div {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1.5em;
+}
+
+.background-img {
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+}

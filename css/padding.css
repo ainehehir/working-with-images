@@ -1,0 +1,36 @@
+:root {
+  --ratio-16-9: 56.25%;
+  --cols: 4;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: calc(100% / var(--cols));
+  margin: 2px;
+  border: 1px solid red;
+}
+
+.padded-container {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: calc(var(--ratio-16-9) / var(--cols));
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+}
